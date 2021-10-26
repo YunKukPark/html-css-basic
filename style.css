@@ -18,6 +18,7 @@ input,
 textarea {
   font-family: 'DM Sans', sans-serif;
   font-size: 16px;
+  border: none;
 }
 
 button:focus,
@@ -224,6 +225,64 @@ p {
   color: #2b292d;
 }
 
+/* Subscription */
+.subscription {
+  text-align: center;
+  background-color: #f2f8fa;
+  padding: 40px 0;
+}
+
+.subscription-image {
+  padding: 25px 0;
+}
+
+.subscription-image img {
+  display: block;
+  width: auto;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.subscription-title {
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #2b292d;
+}
+
+.subscription-desc {
+  margin-bottom: 24px;
+}
+
+.subscription .input-group {
+  margin-bottom: 8px;
+}
+
+.subscription .input-group input {
+  width: 100%;
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.subscription .input-group .fill-button {
+  width: 100%;
+}
+
+.subscription-form .form-notice {
+  font-size: 13px;
+  line-height: 1.538;
+  letter-spacing: 0;
+  color: #7b7b7e;
+}
+
+.subscription-form .form-notice a {
+  text-decoration: underline;
+  color: #3040c4;
+}
+
 /* >= 768px (DeskTop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -331,6 +390,49 @@ p {
   .curriculum-detail-desc {
     font-size: 18px;
     line-height: 1.4444;
+  }
+
+  /* Subscription */
+  .subscription {
+    padding: 80px 0;
+    text-align: left;
+  }
+
+  .subscription-image {
+    padding: 8px 0;
+  }
+
+  .subscription-image img {
+    height: 285px;
+    margin-left: 0; /* 데스크탑 시안 : margin : 0 auto (가운데정렬) => 왼쪽정렬 */
+  }
+
+  .subscription-title {
+    font-size: 40px;
+  }
+
+  .subscription .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  .subscription .input-group input {
+    height: 56px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.333333;
+  }
+
+  .subscription .input-group .fill-button {
+    width: 160px;
+    flex-shrink: 0;
+  }
+
+  .subscription-form .form-notice {
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
 
